@@ -23,20 +23,20 @@ This repository contains the frontend of a functional cleaning service booking p
 
 
 ## 🖼️ Key Conditions
-- **Bookings** 🧾: 
-      1. User cannot able to book same service at same time.
-      2. User cannot able to book services to past date.
-      3. User cannot able to edit or delete when the service at on-going stage.
-      4. User can give reviews about service only after service got completed.
-- **RazorPay** 💵: 
-      1. RazorPay integrated as test-mode, somethimes when user pay via UPI number, payments will get not success, try use different pay options within the RazorPay.
+- **Bookings** 🧾:
+  1. User cannot able to book same service at same time.
+  2. User cannot able to book services to past date.
+  3. User cannot able to edit or delete when the service at on-going stage.
+  4. User can give reviews about service only after service got completed.
+- **RazorPay** 💵:
+  1. RazorPay integrated as test-mode, somethimes when user pay via UPI number, payments will get not success, try use different pay options within the RazorPay.
 - **Node-Mailer** 📧:
-      1. User will get registeration link and password reset link via mail, sometimes mail generated from nodemailer land inside span box in users mail.
+  1. User will get registeration link and password reset link via mail, sometimes mail generated from nodemailer land inside span box in users mail.
 - **Body Background Image** :
-      1. Sometimes user might face the blank white space while login/signup its because of the body background image is not loaded.
-      2. This might happen because user not using the latest version of browser.
+  1. Sometimes user might face the blank white space while login/signup its because of the body background image is not loaded.
+  2. This might happen because user not using the latest version of browser.
 - **Notification** 🔔:
-      1. User only get notification when admin changes there bookings status.
+  1. User only get notification when admin changes there bookings status.
 
 ## 🌐 Responsive Design
 - **Mobile-First Approach** 📲: The application is designed to function smoothly on small screens, ensuring a good user experience on mobile devices.
@@ -56,14 +56,14 @@ This repository contains the frontend of a functional cleaning service booking p
    npm install formik
    npm install yup
    ```
-2. **Web Fonts CDN inside index.html <head /> tag**
+2. **Web Fonts CDN inside index.html**
 ```bash
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 ```
-3. **Adding Script Tag for RazorPay inside index.html <head /> tag**
+3. **Adding Script Tag for RazorPay inside index.html**
 ```bash
    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 ```
