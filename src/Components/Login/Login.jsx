@@ -26,7 +26,7 @@ function Login() {
           setLoading(true);
           const { data } = await http.post("/auth/login", values);
           localStorage.setItem("token", data.token);
-          // window.location = "/";
+          window.location = "/";
           navigate("/");
         } catch(err){
           setLoading(false);
